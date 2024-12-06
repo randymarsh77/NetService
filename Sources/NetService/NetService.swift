@@ -443,7 +443,7 @@ public class NetService {
     }
 
     /// These constants specify options for a network service.
-    public struct Options: OptionSet {
+	public struct Options: OptionSet, Sendable {
         public let rawValue: Int
         public init(rawValue: Int) {
             self.rawValue = rawValue
